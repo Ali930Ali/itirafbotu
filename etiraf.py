@@ -137,7 +137,7 @@ async def aciq(event):
     async for usr in client.iter_participants(event.chat_id):
      etiraf_eden = f"[{usr.first_name}](tg://user?id={usr.id})"
      sonluq = f"\n💌 İtirafınızı {botad} -a yapım"
-     yeni_itiraf = await client.send_message(admin_qrup, f"📣 **Yeni itiraf**\n\n🗣️ **Etiraf Edən -** {etiraf_eden} \n📜 **Etirafı -** {mesaj} \n{sonluq}")
+     yeni_itiraf = await client.send_message(admin_qrup, f"📣 **Yeni itiraf**\n\n🗣️ **Etiraf Edən -** {etiraf_eden} \n📜 **İtirafı -** {mesaj} \n{sonluq}")
      tesdiq = await yeni_etiraf.reply("Etiraf Təsdiqlənsin ?", buttons=(
                       [
                        Button.inline("✅ Onayla", data="tesdiq"
