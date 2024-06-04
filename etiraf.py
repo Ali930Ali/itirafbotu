@@ -49,9 +49,9 @@ async def start(event):
                       [
                        Button.inline("💭 itiraf yaz", data="itiraf")
                       ],
-                      [Button.url('📜 İtiraf Kanalı', f'https://t.me/flexitiraf')],
-                      [Button.url('📣 Support', f'https://t.me/nikeekip'),
-                       Button.url('👨🏻‍💻 Sahibim', f'https://t.me/b4f2f')]
+                      [Button.url('📜 İtiraf Kanalı', f'https://t.me/edebiyatsokagim')],
+                      [Button.url('📣 Support', f'https://t.me/sorundestekk'),
+                       Button.url('👨🏻‍💻 Sahibim', f'https://t.me/debubluman')]
                     ),
                     link_preview=False)
 
@@ -68,9 +68,9 @@ async def handler(event):
                       [
                        Button.inline("💭 İtiraf Yaz", data="itiraf")
                       ],
-                      [Button.url('📜 İtiraf Kanalı', f'https://t.me/flexitiraf')],
-                      [Button.url('📣 Support', f'https://t.me/nikeekip'),
-                       Button.url('👨🏻‍💻 Sahibim', f'https://t.me/b4f2f')]
+                      [Button.url('📜 İtiraf Kanalı', f'https://t.me/edebiyatsokagim')],
+                      [Button.url('📣 Support', f'https://t.me/sorundestekk'),
+                       Button.url('👨🏻‍💻 Sahibim', f'https://t.me/debubluman')]
                     ),
                     link_preview=False)
 
@@ -110,7 +110,7 @@ async def anonim(event):
     async for usr in client.iter_participants(event.chat_id):
      gonderen = f"[{usr.first_name}](tg://user?id={usr.id})"
      etiraf_eden = "Anonim"
-     yeni_etiraf = await client.send_message(admin_qrup, f"📣 **Yeni etiraf**\n\n🗣️ **Etiraf Edən -** {etiraf_eden} \n📜 **Etirafı -** {mesaj} \n\n📣 Etirafınızı {botad} -a edin")
+     yeni_etiraf = await client.send_message(admin_qrup, f"💌 **Yeni itiraf**\n\n🗣️ **İtiraf Edən -** {itiraf_eden} \n📜 **İtirafı -** {mesaj} \n\n💌 İtirafınızı {botad} -a edin")
      tesdiq = await yeni_etiraf.reply("Etiraf Təsdiqlənsin ?", buttons=(
                       [
                        Button.inline("✅ Onaylandı", data="tesdiq"
